@@ -343,7 +343,7 @@ a {
 
 .test-results {
   text-align: center;
-  padding: 30px 0 140px 0;
+  padding: 30px 0 40px 0;
 }
 
 .test-results__title {
@@ -802,6 +802,45 @@ a {
   }
   .server__btn {
     padding: 10px 57px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.footer {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+.footer__beta {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-darkblue);
+  margin-bottom: 10px;
+}
+
+.footer__beta span {
+  color: var(--color-gray);
+}
+
+.footer__time {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-darkblue);
+}
+
+@media (max-width: 900px) {
+  .footer__beta {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .footer__time {
     font-size: 14px;
     line-height: 21px;
   }
