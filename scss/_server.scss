@@ -85,10 +85,6 @@
         width: 193px;
     }
 
-    .server-thread .choices__item .choices__item--selectable {
-        display: flex;
-        justify-content: center;
-    }
 
     .thread .choices__inner {
         padding: 3px 37px 3px 37px !important;
@@ -173,3 +169,9 @@
         }
     }
 }
+
+.thread .choices__item--selectable {
+    display: flex;
+    justify-content: center;
+}
+

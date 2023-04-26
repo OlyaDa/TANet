@@ -721,15 +721,6 @@ a {
   width: 193px;
 }
 
-.server .server-thread .choices__item .choices__item--selectable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .server .thread .choices__inner {
   padding: 3px 37px 3px 37px !important;
 }
@@ -818,6 +809,15 @@ a {
     font-size: 14px;
     line-height: 21px;
   }
+}
+
+.thread .choices__item--selectable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {
