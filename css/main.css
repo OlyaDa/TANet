@@ -809,7 +809,9 @@ a {
 
 .footer {
   background-color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
+  -webkit-box-shadow: 11px -4px 10px rgba(47, 69, 92, 0.07);
+          box-shadow: 11px -4px 10px rgba(47, 69, 92, 0.07);
 }
 
 .footer__beta {
@@ -819,11 +821,6 @@ a {
   line-height: 24px;
   letter-spacing: -0.32px;
   color: var(--color-darkblue);
-  margin-bottom: 10px;
-}
-
-.footer__beta span {
-  color: var(--color-gray);
 }
 
 .footer__time {
