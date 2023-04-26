@@ -1,0 +1,166 @@
+.server {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 28px 0 30px 0;
+
+    &__count {
+        width: 61px;
+        height: 61px;
+        border: solid 2px transparent;
+        border-radius: 50%;
+        background-image: linear-gradient(var(--color-white), var(--color-white)),
+            linear-gradient(90.5deg, var(--color-lightblue) -5.65%, var(--color-blue) 101.74%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        display: inline-block;
+        position: relative;
+        &::before {
+            counter-increment: direction;
+            content: counter(direction);
+            font-size: 24px;
+            line-height: 36px;
+            background: linear-gradient(90.5deg, var(--color-lightblue) -5.65%, var(--color-blue) 101.74%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__list {
+        counter-reset: direction;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__caption {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: var(--color-darkblue);
+        margin: 8px 0 10px 0;
+    }
+    &__btn {
+        padding: 12px 64.5px;
+        background: linear-gradient(90.5deg, var(--color-lightblue) -5.65%, var(--color-blue) 101.74%);
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-white);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: linear-gradient(90.5deg, #5ce0ff -5.65%, #2533b0 101.74%);
+        }
+    }
+
+    .choices__list--dropdown .choices__item--selectable::after,
+    .choices__list[aria-expanded] .choices__item--selectable::after {
+        display: none;
+    }
+
+    .choices[data-type*="select-one"] .choices__inner {
+        padding-bottom: 3px;
+    }
+
+    .choices__inner {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        min-height: 48px;
+        padding: 3px 37px 3px 12px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        border: 1px solid rgba(21, 30, 41, 0.2);
+        border-radius: 4px;
+        background-color: var(--color-white);
+        width: 193px;
+    }
+
+    .choices__list--dropdown .choices__item--selectable.is-highlighted {
+        background-color: var(--color-main);
+    }
+
+    .choices__list--single {
+        padding: 2px 0 2px 0;
+    }
+
+    .choices[data-type*="select-one"]:after {
+        right: 12px;
+        margin-top: 0;
+        border: none;
+        width: 16px;
+        height: 16px;
+        background-image: url("../images/arrow-down.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .choices[data-type*="select-one"].is-open:after {
+        margin-top: 0px;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .choices__list--dropdown {
+        background-color: var(--color-white);
+    }
+
+    .choices__list--dropdown .choices__item--selectable,
+    .choices__list[aria-expanded] .choices__item--selectable {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-metal);
+        display: flex;
+        align-items: center;
+    }
+
+    .choices__list--single .choices__item {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-metal);
+        opacity: 1;
+    }
+
+    @media (min-width: 640px) {
+        .choices__list--dropdown .choices__item--selectable {
+            padding-right: 10px;
+        }
+    }
+}
+
+//media
+@media (max-width: 900px) {
+    .server {
+        &__caption {
+            font-size: 20px;
+            line-height: 30px;
+            margin: 8px 0 10px 0;
+        }
+        .choices__inner {
+            min-height: 41px;
+            padding: 3px 37px 3px 12px;
+            font-size: 14px;
+            line-height: 21px;
+            width: 156px;
+        }
+        &__btn {
+            padding: 10px 57px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

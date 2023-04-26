@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TANet</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--.......................HEADER.......................-->
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="images/logo.svg" alt="TANet Logo" class="logo__img">
+                    <span class="logo__text">TANet</span>
+                </a>
+                <div class="header__buttons">
+                    <button class="btn-reset header__btn">Join Room</button>
+                    <button class="btn-reset header__btn">Login</button>
+
+                    <select name="language" class="select">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Italian">Italian</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--.......................SPEED-TEST.......................-->
+
+            <section class="speed-test">
+                <div class="container">
+                    <h1 class="speed-test__title">TANet - SpeedTest</h1>
+                    <div class="speed-test__info">
+                        <div class="test-info">
+                            <p class="test-info__text">
+                                <span class="test-info__caption">Time:</span>
+                                <span class="test-info__category">2023-Jan-01 13:30</span>
+                            </p>
+                            <p class="test-info__text">
+                                <span class="test-info__caption">From:</span>
+                                <span class="test-info__category">168.95.1.1 (dns.hinet.net)
+                                    2001:b030:214:170:840b:5fe8:a9f8:a1a4 (dns.Hinet)</span>
+                            </p>
+                            <p class="test-info__text">
+                                <span class="test-info__caption">ISP:</span>
+                                <span class="test-info__category">Hinet</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SERVER -->
+                    <div class="server">
+                        <ul class="server__list list-reset">
+                            <li class="server__item">
+                                <div class="server__count"></div>
+                                <h3 class="server__caption">Server</h3>
+                                <select name="server-name" class="select">
+                                    <option value="Keelung">Keelung</option>
+                                    <option value="Keelung2">Keelung2</option>
+                                    <option value="Keelung3">Keelung3</option>
+                                </select>
+                            </li>
+                            <li class="server__item thread">
+                                <div class="server__count"></div>
+                                <h3 class="server__caption">Thread #</h3>
+                                <select name="server-thread" class="select server-thread">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="4">6</option>
+                                    <option value="4">8</option>
+                                </select>
+                            </li>
+                            <li class="server__item">
+                                <div class="server__count"></div>
+                                <h3 class="server__caption">Run</h3>
+                                <button class="btn-reset server__btn">Start</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--.......................TEST-RESULTS.......................-->
+
+            <section class="test-results">
+                <div class="container">
+                    <!--TEST-TABLE-->
+                    <div class="test-table">
+                        <div class="test-table__captions-left">
+                            <span class="test-table__title test-table__title--ipv4">IPv4</span>
+                            <span class="test-table__title test-table__title--ipv6">IPv6</span>
+                        </div>
+                        <div class="test-table__table">
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Download</span>
+                                <span class="test-table__value test-table__value--ipv4">65.7</span>
+                                <span class="test-table__value test-table__value--ipv6">25.1</span>
+                                <span class="test-table__unit">Mbps</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Upload</span>
+                                <span class="test-table__value test-table__value--ipv4">66.0</span>
+                                <span class="test-table__value test-table__value--ipv6">34.1</span>
+                                <span class="test-table__unit">Mbps</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Ping</span>
+                                <span class="test-table__value test-table__value--ipv4">12.5</span>
+                                <span class="test-table__value test-table__value--ipv6">9.4</span>
+                                <span class="test-table__unit">ms</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Jitter</span>
+                                <span class="test-table__value test-table__value--ipv4">1.7</span>
+                                <span class="test-table__value test-table__value--ipv6">0.6</span>
+                                <span class="test-table__unit">ms</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-reset test-results__btn">Test Again</button>
+
+                    <div class="graphs">
+                        <h4 class="graphs__caption graphs__caption--ipv4">
+                            IPv4
+                        </h4>
+                        <h4 class="graphs__caption graphs__caption--ipv6">
+                            IPv6
+                        </h4>
+                        <div class="graphs__img">
+                            <img src="images/ipv4-down.png" alt="IPv4 Download">
+                        </div>
+                        <div class="graphs__img">
+                            <img src="images/ipv6-down.png" alt="IPv6 Download">
+                        </div>
+                        <div class="graphs__img">
+                            <img src="images/ipv4-upload.png" alt="IPv4 Upload">
+                        </div>
+                        <div class="graphs__img">
+                            <img src="images/ipv6-upload.png" alt="IPv6 Upload">
+                        </div>
+                        <div class="graphs__img">
+                            <img src="images/ipv4-ping.png" alt="IPv4 Ping">
+                        </div>
+                        <div class="graphs__img">
+                            <img src="images/ipv6-ping.png" alt="IPv6 Ping">
+                        </div>
+                        <div class="graphs__img none">
+                            <img src="images/ipv4-jitter.png" alt="IPv4 Jitter">
+                        </div>
+                        <div class="graphs__img none">
+                            <img src="images/ipv6-jitter.png" alt="IPv6 Jitter">
+                        </div>
+                    </div>
+
+                    <h2 class="test-results__title"> <span>Test results</span> <button
+                            class="btn-reset test-results__download"></button></h2>
+                    <!--TEST-RESULTS-TABLE-->
+                    <div class="test-result__table table-result">
+                        <span class="table-result__caption">Client</span>
+                        <span class="table-result__caption">Download Server</span>
+                        <span class="table-result__caption">Download Speed, Mbps</span>
+                        <span class="table-result__caption">Upload Speed, Mbps</span>
+                        <span class="table-result__caption">Ping Latency, ms</span>
+                        <span class="table-result__caption">Jitter, ms</span>
+                        <span class="table-result__caption">Time</span>
+
+                        <span class="table-result__value">125.229.56.207</span>
+                        <span class="table-result__value">nnn</span>
+                        <span class="table-result__value">65.7</span>
+                        <span class="table-result__value">66.0</span>
+                        <span class="table-result__value">12.5</span>
+                        <span class="table-result__value">1.7</span>
+                        <span class="table-result__value">16:13:45</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--.......................FOOTER.......................-->
+
+        <footer class="footer">
+
+        </footer>
+        <!-- Choiser for select -->
+        <script src="js/choices.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>

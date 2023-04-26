@@ -1,0 +1,220 @@
+.test-results {
+    text-align: center;
+    padding: 30px 0 140px 0;
+    &__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        color: var(--color-darkblue);
+        margin-bottom: 20px;
+        span {
+            margin-right: 10px;
+        }
+    }
+    &__download {
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/download.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__btn {
+        padding: 12px 32px;
+        background: linear-gradient(90.5deg, var(--color-lightblue) -5.65%, var(--color-blue) 101.74%);
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-white);
+        margin-bottom: 60px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: linear-gradient(90.5deg, #5ce0ff -5.65%, #2533b0 101.74%);
+        }
+    }
+}
+
+.test-table {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    display: grid;
+    padding: 30px 115px 30px 112px;
+    grid-template-columns: 13.7% 1fr;
+    margin-bottom: 30px;
+    &__table {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__captions-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        margin: 58px 0 25px 0;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &__caption {
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--color-darkblue)
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    &__title--ipv4 {
+        color: var(--color-cerulean);
+    }
+    &__title--ipv6 {
+        color: var(--color-matisse);
+    }
+    &__value {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    &__value--ipv4 {
+        color: var(--color-cerulean);
+    }
+    &__value--ipv6 {
+        color: var(--color-matisse);
+    }
+    &__unit {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--color-darkblue);
+    }
+}
+
+.table-result {
+    display: grid;
+    grid-template-columns: 15.278% 15.278% 17.747% 15.278% 15.278% 9.259% 11.883%;
+    text-align: left;
+    &__caption {
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        padding: 10px 12px;
+        color: var(--color-metal);
+        background: #e1e6f0;
+    }
+    &__value {
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        padding: 10px 12px;
+        color: var(--color-metal);
+        background: var(--color-white);
+    }
+}
+
+.graphs {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+    &__caption {
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    &__caption--ipv4 {
+        color: var(--color-cerulean);
+    }
+    &__caption--ipv6 {
+        color: var(--color-matisse);
+    }
+    &__img {
+        box-shadow: 11px 4px 10px rgba(47, 69, 92, 0.07);
+        border-radius: 12px;
+        background-color: var(--color-white);
+    }
+}
+
+//media
+@media (max-width: 900px) {
+    .test-results {
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            span {
+                margin-right: 10px;
+            }
+        }
+        &__download {
+            width: 18px;
+            height: 18px;
+        }
+        &__btn {
+            padding: 10px 37px;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .table-result {
+        grid-template-columns: 17.278% 13.278% 17.747% 17.278% 16.278% 10.259% 11.883%;
+        &__caption {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__value {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    .graphs {
+        display: grid;
+        row-gap: 10px;
+        column-gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 40px;
+        &__caption {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .test-table {
+        padding: 35px 67px 35px 67px;
+        margin-bottom: 20px;
+        &__col {
+            gap: 4px;
+        }
+        &__caption {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__caption-ipv4 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__caption-ipv6 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__value-ipv6 {
+            font-size: 36px;
+            line-height: 54px;
+        }
+        &__value-ipv4 {
+            font-size: 36px;
+            line-height: 54px;
+        }
+    }
+}
