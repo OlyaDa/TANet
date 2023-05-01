@@ -1,11 +1,11 @@
 :root {
     --color-white: #fff;
     --color-main: #f9f9fa;
-    --color-darkblue: #2F455C;
+    --color-darkblue: #2f455c;
     --color-dark: #152331;
     --color-cabbage: #3d4a39;
     --color-aqua: #f6faf9;
-    --color-metal: #151E29;
+    --color-metal: #151e29;
     --color-lightblue: #1ccff9;
     --color-blue: #212868;
     --color-gray: #9193a6;
@@ -16,13 +16,18 @@
 * {
     box-sizing: border-box;
 }
+
+html,
 body {
-    background-color: #f9f9fa;
+    background-color: var(--color-aqua);
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 16px;
     font-weight: 700;
     height: 100%;
+}
+main {
+    flex: 1 1 auto;
 }
 .container {
     max-width: 1326px;
@@ -36,6 +41,8 @@ body {
 .wrapper {
     overflow: hidden;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .list-reset {
     list-style: none;
@@ -56,8 +63,42 @@ a {
     background: transparent;
     cursor: pointer;
 }
-@media (max-width: 500px) {
-    .container {
-        padding: 0 10px;
+.go-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 5%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 50%;
+    background: var(--color-darkblue);
+    background-image: url("../images/arrow-top.svg");
+    background-position: center;
+    background-size: 27px 27px;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        background: var(--color-dark);
+        background-image: url("../images/arrow-top.svg");
+        background-position: center;
+        background-size: 27px 27px;
+        background-repeat: no-repeat;
+    }
+}
+.go-to-top--show {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+@media (max-width: 900px) {
+    .go-to-top {
+        width: 50px;
+        height: 50px;
+        background-size: 17px 17px;
+        &:hover {
+            background-size: 17px 17px;
+        }
     }
 }

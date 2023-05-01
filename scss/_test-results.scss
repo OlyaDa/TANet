@@ -66,7 +66,7 @@
     &__caption {
         font-size: 32px;
         line-height: 48px;
-        color: var(--color-darkblue)
+        color: var(--color-darkblue);
     }
     &__title {
         font-size: 24px;
@@ -98,23 +98,59 @@
 
 .table-result {
     display: grid;
-    grid-template-columns: 15.278% 15.278% 17.747% 15.278% 15.278% 9.259% 11.883%;
-    text-align: left;
-    &__caption {
+    grid-template-rows: 3fr;
+    grid-template-columns: 15% repeat(23, 1fr);
+    margin-bottom: 20px;
+
+    &__caption-left {
+        text-align: initial;
+        display: block;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: -0.32px;
-        padding: 10px 12px;
+        color: var(--color-metal);
+        min-height: 45px;
+        padding: 10px 12px 10px 20px;
+        background: var(--color-white);
+
+        &:first-child {
+            width: 100%;
+            background-color: #e1e6f0;
+            border-radius: 12px 0 0 0;
+        }
+    }
+    .caption-left {
+        border-radius: 0 0 0 12px;
+    }
+    &__caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 13px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
         color: var(--color-metal);
         background: #e1e6f0;
+        min-height: 45px;
+        &:nth-of-type(24) {
+            border-radius: 0 12px 0 0;
+        }
     }
     &__value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 45px;
         font-weight: 400;
         line-height: 24px;
         letter-spacing: -0.32px;
-        padding: 10px 12px;
+        padding: 10px 13px;
         color: var(--color-metal);
         background: var(--color-white);
+        &:last-child {
+            border-radius: 0 0 12px 0;
+        }
     }
 }
 
@@ -142,7 +178,67 @@
     }
 }
 
+.test-memo {
+    &__title {
+        font-size: 32px;
+        line-height: 48px;
+        color: var(--color-darkblue);
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    &__input {
+        display: flex;
+        justify-content: start;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-metal);
+        opacity: 0.7;
+        padding: 10px 12px;
+        border: 1px solid var(--color-darkblue);
+        border-radius: 4px;
+        width: 171px;
+        margin: 0 auto 20px;
+    }
+    &__btn {
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-white);
+        padding: 12px;
+        background: linear-gradient(90.5deg, #1ccff9 -5.65%, #212868 101.74%);
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background: linear-gradient(90.5deg, #5ce0ff -5.65%, #2533b0 101.74%);
+        }
+    }
+}
+
 //media
+
+@media (max-width: 1300px) {
+    .table-result {
+        grid-template-columns: 15% repeat(23, 1fr);
+
+        &__caption-left {
+            font-size: 14px;
+            line-height: 21px;
+            min-height: 41px;
+            padding: 10px 12px;
+        }
+        &__caption {
+            padding: 10px 5px;
+            font-size: 12px;
+            line-height: 18px;
+            min-height: 38px;
+        }
+        &__value {
+            font-size: 14px;
+            line-height: 21px;
+            padding: 10px 5px;
+        }
+    }
+}
 @media (max-width: 900px) {
     .test-results {
         &__title {
@@ -162,18 +258,6 @@
             font-size: 14px;
             line-height: 21px;
             margin-bottom: 40px;
-        }
-    }
-
-    .table-result {
-        grid-template-columns: 17.278% 13.278% 17.747% 17.278% 16.278% 10.259% 11.883%;
-        &__caption {
-            font-size: 14px;
-            line-height: 21px;
-        }
-        &__value {
-            font-size: 14px;
-            line-height: 21px;
         }
     }
 
@@ -215,6 +299,23 @@
         &__value-ipv4 {
             font-size: 36px;
             line-height: 54px;
+        }
+    }
+
+    .test-memo {
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        &__input {
+            font-size: 14px;
+            line-height: 21px;
+            width: 148px;
+        }
+        &__btn {
+            font-size: 14px;
+            line-height: 21px;
         }
     }
 }
