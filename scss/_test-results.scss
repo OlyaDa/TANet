@@ -148,6 +148,7 @@
         padding: 10px 13px;
         color: var(--color-metal);
         background: var(--color-white);
+        min-width: 24px;
         &:last-child {
             border-radius: 0 0 12px 0;
         }
@@ -233,7 +234,7 @@
             min-height: 38px;
         }
         &__value {
-            font-size: 14px;
+            font-size: 12px;
             line-height: 21px;
             padding: 10px 5px;
         }
@@ -248,6 +249,9 @@
             span {
                 margin-right: 10px;
             }
+        }
+        &__value {
+            font-size: 12px;
         }
         &__download {
             width: 18px;
