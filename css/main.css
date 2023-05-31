@@ -204,6 +204,10 @@ a {
   border: 1px solid var(--color-dark);
 }
 
+.header__btn--exit {
+  padding: 7px 25px;
+}
+
 .header .choices__list--dropdown .choices__item--selectable::after,
 .header .choices__list[aria-expanded] .choices__item--selectable::after {
   display: none;
@@ -1023,6 +1027,267 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.setting__title {
+  margin: 60px 0 40px 0;
+}
+
+.setting__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-white);
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.setting__qr-code {
+  width: 300px;
+  height: 300px;
+}
+
+.setting__table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.setting .table-result__value:last-child {
+  border-radius: 0 0 0 0;
+}
+
+.setting .choices {
+  margin-bottom: 10px;
+}
+
+.setting .choices__list--dropdown .choices__item--selectable::after,
+.setting .choices__list[aria-expanded] .choices__item--selectable::after {
+  display: none;
+}
+
+.setting .choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 0;
+}
+
+.setting .choices__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  min-height: 48px;
+  padding: 0px 0px 0px 0px;
+  font-weight: 400;
+  color: var(--color-metal);
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  border: 1px solid var(--color-darkblue);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  width: 193px;
+  height: 48px;
+}
+
+.setting .choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: var(--color-main);
+}
+
+.setting .choices__list--single {
+  padding: 0;
+}
+
+.setting .choices[data-type*="select-one"]:after {
+  right: 12px;
+  margin-top: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/arrow-down.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.setting .choices[data-type*="select-one"].is-open:after {
+  margin-top: 0px;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.setting .choices__list--dropdown {
+  background-color: var(--color-white);
+}
+
+.setting .choices__list--dropdown .choices__item--selectable,
+.setting .choices__list[aria-expanded] .choices__item--selectable {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-metal);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 48px;
+  padding: 0;
+}
+
+.setting .choices__list--single .choices__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-metal);
+  opacity: 1;
+}
+
+.setting .choices__item--selectable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.setting-inputs__title {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--color-darkblue);
+  margin: 0 0 10px 0;
+}
+
+.setting-inputs__input {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: #151e29;
+  opacity: 0.7;
+  border: 1px solid #2f455c;
+  border-radius: 4px;
+  width: 193px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.setting-inputs__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-white);
+  width: 193px;
+  height: 48px;
+  background: linear-gradient(90.5deg, #1ccff9 -5.65%, #212868 101.74%);
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.setting-inputs__btn:hover {
+  background: linear-gradient(90.5deg, #5ce0ff -5.65%, #2533b0 101.74%);
+}
+
+.info {
+  text-align: center;
+}
+
+.info:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.info__title {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+  color: var(--color-gray);
+  margin-bottom: 10px;
+}
+
+.info__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-darkblue);
+}
+
+@media (max-width: 900px) {
+  .setting__title {
+    margin-bottom: 30px;
+  }
+  .setting__qr-code {
+    width: 212px;
+    height: 212px;
+  }
+  .choices__inner {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .setting-inputs__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .setting-inputs__input {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .setting-inputs__btn {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .info__title {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .info__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .footer {

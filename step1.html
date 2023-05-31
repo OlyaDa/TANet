@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TANet</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--.......................HEADER.......................-->
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="images/logo.svg" alt="TANet Logo" class="logo__img">
+                    <span class="logo__text">TANet</span>
+                </a>
+                <div class="header__buttons">
+                    <button class="btn-reset header__btn header__btn--exit">Exit</button>
+
+                    <select name="language" class="select">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Italian">Italian</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--.......................SETTING.......................-->
+
+            <section class="setting">
+                <div class="container">
+                    <h1 class="speed-test__title setting__title">TANet - SpeedTest</h1>
+
+                    <div class="setting__holder">
+                        <img src="images/qr-code.png" alt="qr-code" class="setting__qr-code">
+
+                        <div class="setting-inputs">
+                            <h4 class="setting-inputs__title">Setting</h4>
+                            <select name="server-name" class="setting-inputs__select select">
+                                <option value="Server">Server</option>
+                                <option value="Server2">Server2</option>
+                                <option value="Server3">Server3</option>
+                            </select>
+                            <select name="ip" class="setting-inputs__select select">
+                                <option value="IPv4">IPv4</option>
+                                <option value="IPv6">IPv6</option>
+                            </select>
+                            <div class="setting-inputs__input">Speed limit (kbps)</div>
+                            <div class="setting-inputs__input">Test timeout</div>
+                            <button class="btn-reset setting-inputs__btn">Start</button>
+                        </div>
+
+                        <div class="setting__info">
+                            <div class="info">
+                                <div class="info__title">The test will start in:</div>
+                                <div class="info__text">01:20</div>
+                            </div>
+                            <div class="info">
+                                <div class="info__title">Total clients:</div>
+                                <div class="info__text">5</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting__table table-result">
+                        <span class="table-result__caption">No</span>
+                        <span class="table-result__caption">Client</span>
+                        <span class="table-result__caption">Download (Mbps)</span>
+                        <span class="table-result__caption">Upload (Mbps)</span>
+                        <span class="table-result__caption">Ping (ms)</span>
+                        <span class="table-result__caption">Jitter (ms)</span>
+                        <span class="table-result__caption">Timestamp</span>
+
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                        <span class="table-result__value">-</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--.......................FOOTER.......................-->
+
+        <footer class="footer">
+            <div class="container">
+                <div id="footer" class="footer__beta"> beta 03-15.1 </div>
+                <div id="clock" class="footer__time">time</div>
+            </div>
+        </footer>
+
+        <div class="go-to-top"></div>
+    </div>
+    <!-- Choiser for select -->
+    <script src="js/choices.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
