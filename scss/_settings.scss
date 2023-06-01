@@ -78,7 +78,7 @@ a {
     background-size: 27px 27px;
     background-repeat: no-repeat;
     transform: translateY(-50%);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover {
         background: var(--color-dark);
         background-image: url("../images/arrow-top.svg");

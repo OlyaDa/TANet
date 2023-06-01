@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>TANet</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--.......................HEADER.......................-->
+
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="images/logo.svg" alt="TANet Logo" class="logo__img">
+                    <span class="logo__text">TANet</span>
+                </a>
+                <div class="header__buttons">
+                    <button class="btn-reset header__btn">Join Room</button>
+                    <button class="btn-reset header__btn">Login</button>
+
+                    <select name="language" class="select">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Italian">Italian</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--.......................HISTORY.......................-->
+
+            <section class="history">
+                <div class="container">
+                    <div class="history__top">
+                        <h2 class="history__title test-results__title"> <span>History</span> <button
+                                class="btn-reset history__download test-results__download"></button></h2>
+                        <!-- <input type="text" name="datefilter" value="" /> -->
+                        <input class="history__date" type="text" name="datefilter" value="" />
+                        <button class="btn-reset history__arrows"></button>
+                    </div>
+
+                    <div class="history__table table-result history-table">
+                        <!-- title row -->
+                        <span class="table-result__caption history-table__caption">username</span>
+                        <span class="table-result__caption history-table__caption">date</span>
+                        <span class="table-result__caption history-table__caption">time</span>
+                        <span class="table-result__caption history-table__caption">note</span>
+                        <span class="table-result__caption history-table__caption">test id</span>
+                        <span class="table-result__caption history-table__caption">test type</span>
+                        <!-- row 1 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 2 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 3 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 4 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 5 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 6 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 7 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 8 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 9 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 10 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 11 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 12 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 13 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 14 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 15 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 16 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 17 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 18 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 19 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+                        <!-- row 20 -->
+                        <span class="table-result__value history-table__value">User1235</span>
+                        <span class="table-result__value history-table__value">2022/02/12</span>
+                        <span class="table-result__value history-table__value">12:30 PM</span>
+                        <span class="table-result__value history-table__value">room 102 test</span>
+                        <span class="table-result__value history-table__value">1234567890</span>
+                        <span class="table-result__value history-table__value">single</span>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--.......................FOOTER.......................-->
+
+        <footer class="footer">
+            <div class="container">
+                <div id="footer" class="footer__beta"> beta 03-15.1 </div>
+                <div id="clock" class="footer__time">time</div>
+            </div>
+        </footer>
+
+        <div class="go-to-top"></div>
+    </div>
+
+    <script>
+
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Choiser for select -->
+    <script src="js/choices.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

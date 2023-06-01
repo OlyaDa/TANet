@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TANet</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--.......................HEADER.......................-->
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="logo header__logo">
+                    <img src="images/logo.svg" alt="TANet Logo" class="logo__img">
+                    <span class="logo__text">TANet</span>
+                </a>
+                <div class="header__buttons">
+                    <button class="btn-reset header__btn header__btn--exit">Exit</button>
+
+                    <select name="language" class="select">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Italian">Italian</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--.......................TEST-RESULTS.......................-->
+
+            <section class="test-results test-results__page">
+                <div class="container">
+                    <h1 class="speed-test__title setting__title">TANet - SpeedTest</h1>
+                    <!--TEST-TABLE-->
+                    <div class="test-table">
+                        <div class="test-table__captions-left">
+                            <span class="test-table__title test-table__title--ipv4">IPv4</span>
+                            <span class="test-table__title test-table__title--ipv6">IPv6</span>
+                        </div>
+                        <div class="test-table__table">
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Download</span>
+                                <span class="test-table__value test-table__value--ipv4">65.7</span>
+                                <span class="test-table__value test-table__value--ipv6">25.1</span>
+                                <span class="test-table__unit">Mbps</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Upload</span>
+                                <span class="test-table__value test-table__value--ipv4">66.0</span>
+                                <span class="test-table__value test-table__value--ipv6">34.1</span>
+                                <span class="test-table__unit">Mbps</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Ping</span>
+                                <span class="test-table__value test-table__value--ipv4">12.5</span>
+                                <span class="test-table__value test-table__value--ipv6">9.4</span>
+                                <span class="test-table__unit">ms</span>
+                            </div>
+                            <div class="test-table__col">
+                                <span class="test-table__caption">Jitter</span>
+                                <span class="test-table__value test-table__value--ipv4">1.7</span>
+                                <span class="test-table__value test-table__value--ipv6">0.6</span>
+                                <span class="test-table__unit">ms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--.......................FOOTER.......................-->
+
+        <footer class="footer">
+            <div class="container">
+                <div id="footer" class="footer__beta"> beta 03-15.1 </div>
+                <div id="clock" class="footer__time">time</div>
+            </div>
+        </footer>
+
+        <div class="go-to-top"></div>
+    </div>
+    <!-- Choiser for select -->
+    <script src="js/choices.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
