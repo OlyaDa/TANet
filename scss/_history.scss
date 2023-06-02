@@ -147,7 +147,7 @@
     margin-top: 0px;
     width: 166px;
     background: var(--color-whitegrey);
-    padding-bottom: 110px;
+    padding-bottom: 132px;
 }
 
 .daterangepicker .ranges li.active {
@@ -216,7 +216,7 @@ thead tr:last-child th {
 
 .daterangepicker td.available:hover,
 .daterangepicker th.available:hover {
-    background-color:  var(--color-cerulean);
+    background-color: var(--color-cerulean);
 }
 
 .daterangepicker .calendar-table th,
@@ -236,6 +236,7 @@ thead tr:last-child th {
     max-width: 342px;
 }
 
+
 //media
 @media (max-width: 900px) {
     .history {
@@ -245,7 +246,37 @@ thead tr:last-child th {
             line-height: 21px;
         }
     }
-    .daterangepicker .drp-calendar.right {
+    .drp-calendar.left {
+        height: 465px;
+    }
+    .daterangepicker .drp-calendar.right .calendar-table {
         display: none;
+    }
+    .drp-calendar.right .calendar-time {
+        position: absolute;
+        left: 225px;
+        bottom: 80px;
+    }
+
+    .drp-calendar.left .calendar-time:before {
+        content: "From time:        ";
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+        color: var(--color-metal);
+    }
+
+    .drp-calendar.right .calendar-time:before {
+        content: "To time:        ";
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
+          color: var(--color-metal);
     }
 }
