@@ -3,14 +3,19 @@
     --color-main: #f9f9fa;
     --color-darkblue: #2f455c;
     --color-dark: #152331;
+    --color-browm: #212529;
     --color-cabbage: #3d4a39;
     --color-aqua: #f6faf9;
     --color-metal: #151e29;
     --color-lightblue: #1ccff9;
     --color-blue: #212868;
     --color-gray: #9193a6;
+    --color-darkgrey: #6b7280;
     --color-cerulean: #02aee9;
     --color-matisse: #1f619a;
+    --color-cerulean: #02aee9;
+    --color-athens: #e5e7eb;
+    --color-whitegrey: #f9fafb;
 }
 
 * {
@@ -25,6 +30,9 @@ body {
     font-size: 16px;
     font-weight: 700;
     height: 100%;
+}
+body.lock {
+	overflow: hidden;
 }
 main {
     flex: 1 1 auto;
@@ -102,3 +110,6 @@ a {
         }
     }
 }
+
+
+

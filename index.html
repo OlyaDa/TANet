@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/main.css">
     <title>TANet</title>
 </head>
@@ -14,15 +15,16 @@
 <body>
     <div class="wrapper">
         <!--.......................HEADER.......................-->
-        <header class="header">
+        <header class="header lock-padding">
             <div class="container header__container">
                 <a href="#" class="logo header__logo">
                     <img src="images/logo.svg" alt="TANet Logo" class="logo__img">
                     <span class="logo__text">TANet</span>
                 </a>
                 <div class="header__buttons">
-                    <button class="btn-reset header__btn">Join Room</button>
-                    <button class="btn-reset header__btn">Login</button>
+                    <button class="btn-reset header__btn popup-link" data-path="popup-joinroom">Join Room</button>
+                    <button class="btn-reset header__btn popup-link" data-path="popup-login">Login</button>
+                    <!-- <a href="#popup" class="btn-reset header__btn popup-link">Login</a> -->
 
                     <select name="language" class="select">
                         <option value="English">English</option>
@@ -344,8 +346,63 @@
 
         <div class="go-to-top"></div>
     </div>
+
+    <!--.......................POPUPS.......................-->
+
+    <div id="popup-login" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"></a>
+                <div class="popup__title">Login</div>
+                <form class="popup__form form">
+                    <input type="text" class="form__input" placeholder="Username">
+                    <input type="password" class="form__input" placeholder="Password">
+                    <button class="form__btn btn-reset header__btn">Login</button>
+                    <button class="form__btn form__btn--id btn-reset header__btn">Open ID</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-joinroom" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"></a>
+                <div class="popup__title">Join room</div>
+                <form class="popup__form form">
+                    <input type="text" class="form__input" placeholder="Session ID">
+                    <button class="form__btn btn-reset header__btn popup-link" data-path="popup-session">Join</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-session" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close close-popup"></a>
+                <div class="popup__title"> You have the session</div>
+                <form class="popup__form form">
+                    <div class="form__chekbox">
+                        <input type="radio" id="newSession" name="session" value="newSession">
+                        <label for="newSession">Create new session</label>
+                    </div>
+                    <div class="form__chekbox">
+                        <input type="radio" id="sessionId" name="session" value="sessionId">
+                        <label for="sessionId">Connect to existing session ID = 123</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <!-- Choiser for select -->
     <script src="js/choices.min.js"></script>
+    <!-- Popup -->
+    <script src="js/popup.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
 </body>

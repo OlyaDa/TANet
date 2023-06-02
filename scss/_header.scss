@@ -26,6 +26,7 @@
         transition: all 0.3s ease-in-out;
         margin-right: 24px;
         height: 38px;
+        transition: all 0.3s ease-in-out;
         &:hover {
             background: var(--color-dark);
             border: 1px solid var(--color-dark);
@@ -33,6 +34,22 @@
     }
     &__btn--exit {
         padding: 7px 25px;
+    }
+    &__btn--history {
+        padding: 4px 12px;
+        border: 1px solid rgba(21, 30, 41, 0.2);
+        border-radius: 4px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: -0.32px;
+        color: var(--color-metal);
+        background-color: var(--color-white);
+        margin-right: 24px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border: 1px solid var(--color-darkblue);
+            color: var(--color-darkblue);
+        }
     }
 
     .choices__list--dropdown .choices__item--selectable::after,
