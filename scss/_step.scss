@@ -1,0 +1,52 @@
+.step {
+    &__table {
+        display: grid;
+        text-align: start;
+        grid-template-columns: 4.86% 14.35% 11.49% 10.8% 10.9% 14.35% 11.49% 10.8% 10.95%;
+    }
+    &__arrows {
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/filter.svg");
+        background-position: center;
+        // background-size: cover;
+        background-repeat: no-repeat;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.step-table {
+    &__caption {
+        padding: 10px;
+        &:first-child {
+            border-radius: 0 0 0 0;
+        }
+        &:nth-of-type(9) {
+            border-radius: 0 0 0 0;
+        }
+        &:nth-of-type(6) {
+            border-radius: 0 0 0 0;
+        }
+    }
+}
+
+.history-table {
+    &__value {
+        &--even {
+            background-color: rgba(225, 230, 240, 0.5);
+        }
+    }
+}
+
+//media
+@media (max-width: 900px) {
+    .step-table {
+        &__caption {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+    }
+}
