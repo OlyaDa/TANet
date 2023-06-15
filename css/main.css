@@ -1827,19 +1827,19 @@ thead tr:last-child th {
 }
 
 input::-webkit-input-placeholder {
-  color: var(--color-brown);
+  color: var(--color-gray);
 }
 
 input:-ms-input-placeholder {
-  color: var(--color-brown);
+  color: var(--color-gray);
 }
 
 input::-ms-input-placeholder {
-  color: var(--color-brown);
+  color: var(--color-gray);
 }
 
 input::placeholder {
-  color: var(--color-brown);
+  color: var(--color-gray);
 }
 
 .footer {
