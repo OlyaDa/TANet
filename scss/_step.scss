@@ -53,9 +53,10 @@
 
 .textarea {
     &__title {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 27px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.32px;
         color: var(--color-darkblue);
         margin-bottom: 5px;
         text-align: center;
